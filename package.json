@@ -1,6 +1,6 @@
 {
   "name": "restify-cors-middleware2",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Datatrac Corporation",
   "license": "MIT",
   "description": "CORS middleware with full W3C spec support",

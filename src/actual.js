@@ -22,7 +22,7 @@ exports.handler = function (options) {
       res.setHeader(constants.AC_ALLOW_CREDS, 'true')
     }
     res.setHeader(constants.AC_EXPOSE_HEADERS,
-      options.exposeHeaders.join(', '))
+      options.exposeHeaders.join(','))
 
     return next()
   }

@@ -105,7 +105,7 @@ describe('CORS: preflight requests', function () {
       .options('/test')
       .set('Origin', 'http://api.myapp.com')
       .set('Access-Control-Request-Method', 'GET')
-      .expect('Access-Control-Allow-Methods', 'GET, OPTIONS')
+      .expect('Access-Control-Allow-Methods', 'GET,OPTIONS')
       .expect(204)
       .end(done)
   })

@@ -32,10 +32,10 @@ exports.handler = function (options) {
       }
 
       // 6.2.9
-      res.header(constants.AC_ALLOW_METHODS, allowedMethods.join(', '))
+      res.header(constants.AC_ALLOW_METHODS, allowedMethods.join(','))
 
       // 6.2.10
-      res.header(constants.AC_ALLOW_HEADERS, allowedHeaders.join(', '))
+      res.header(constants.AC_ALLOW_HEADERS, allowedHeaders.join(','))
     })
 
     res.send(constants.HTTP_NO_CONTENT)

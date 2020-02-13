@@ -89,7 +89,7 @@ describe('CORS: simple / actual requests', function () {
       .get('/test')
       .set('Origin', 'http://api.myapp.com')
       .expect('access-control-allow-origin', 'http://api.myapp.com')
-      .expect('access-control-expose-headers', /HeaderA, HeaderB/) // custom
+      .expect('access-control-expose-headers', /HeaderA,HeaderB/) // custom
       .expect('access-control-expose-headers', /api-version/) // defaults
       .expect(200)
       .end(done)
