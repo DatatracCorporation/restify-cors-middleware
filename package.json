@@ -26,8 +26,8 @@
     "restify": "2.6.x - 8.x.x"
   },
   "devDependencies": {
-    "mocha": "^7.2.0",
-    "require-lint": "^1.4.1",
+    "mocha": "^8.1.3",
+    "require-lint": "^2.0.2",
     "restify": "^8.5.1",
     "should": "^13.2.3",
     "standard": "^14.3.4",
