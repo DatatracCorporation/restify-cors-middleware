@@ -15,8 +15,8 @@ var constants = require('./constants.js')
  * 2. If the resource supports credentials add a single
  *    'Access-Control-Allow-Credentials' header with the value as "true", and
  *    ensure 'AC-Allow-Origin' is not '*', but is the request header value,
- *    otherwise add a single Access-Control-Allow-Origin header, with either the
- *    value of the Origin header or the string "*" as value
+ *    otherwise add a single Access-Control-Allow-Origin header, with either
+ *    the value of the Origin header or the string "*" as value
  *
  * 3. Add Access-Control-Expose-Headers as appropriate
  *
@@ -24,13 +24,17 @@ var constants = require('./constants.js')
  * @function createCorsContext
  * @param    {Object} options an options object
  * @param    {Array} [options.origins] an array of whitelisted origins, can be
- * both strings and regular expressions
+ *     both strings and regular expressions
  * @param    {Boolean} [options.credentials] if true, uses creds
+ * @param    {Boolean} [options.allowCredentialsAllOrigins] if true,
+ *     credentials will be allowed for all origins, normally passing
+ *     credentials and a wildcard origin together is not supported
  * @param    {Array} [options.allowHeaders] user defined headers to allow
  * @param    {Array} [options.exposeHeaders] user defined headers to expose
- * @param    {Number} [options.preflightMaxAge] seconds to cache preflight requests
+ * @param    {Number} [options.preflightMaxAge] seconds to cache preflight
+ *     requests
  * @param    {Object | Function} [options.preflightStrategy]
- * customize preflight request handling
+ *     customize preflight request handling
  * @returns  {Object} returns an object with actual and preflight handlers
  */
 module.exports = function (options) {
