@@ -14,11 +14,11 @@ declare namespace corsMiddleware {
      * an array of whitelisted origins
      * can be both strings and regular expressions
      */
-    origins: Array<string | RegExp>;
+    origins?: Array<string | RegExp>;
     /** user defined headers to allow */
-    allowHeaders: string[];
+    allowHeaders?: string[];
     /** user defined headers to expose */
-    exposeHeaders: string[];
+    exposeHeaders?: string[];
     /** if true, uses creds */
     credentials?: boolean;
     /** ms to cache preflight requests */
