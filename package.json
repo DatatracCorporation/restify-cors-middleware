@@ -23,12 +23,12 @@
     "fix": "standard --fix"
   },
   "peerDependencies": {
-    "restify": "2.6.x - 8.x.x"
+    "restify": "2.6.x - 10.x.x"
   },
   "devDependencies": {
     "mocha": "^8.1.3",
     "require-lint": "^2.0.2",
-    "restify": "^8.5.1",
+    "restify": "^10.0.0",
     "should": "^13.2.3",
     "standard": "^14.3.4",
     "supertest": "^4.0.2"
